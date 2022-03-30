@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-  
-    
-     
-    <title>About Finance data</title>
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     
-	<link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="static/style.css">
+    
+    <script src="style.css"></script>
+    
+    <script src="Finance.py"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+      
+    <title>About Finance data</title>
+    
+  
+    
+	
   </head>
   <body> 
     <h1> About Finance data</h1>
+    
+    <form action="/Data">
     
     <p> The data used in this web app is from the CORGIS Dataset the project and can be found 
     <a href="https://think.cs.vt.edu/corgis/json/finance/">here</a>.</p>
@@ -19,6 +39,11 @@
     <p> The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, 
     as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose.
     This data goes back for almost two decades across every date. (1992 - 2019)</p> 
+    
+    <p> The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual
+        states. The financial data is limited to coverage of state governments and provide no measure of local government finances as such. The information can be found in the 
+    <a href="https://www.census.gov/programs-surveys/state/about.html">source</a>. They are using caution in attempting to draw conclusions from direct comparisons of financial amounts for
+        individual state governments. Some states directly administer activities that elsewhere are undertaken by local governments, with or without state fiscal aid.</p>    
       
     
     
