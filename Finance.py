@@ -4,7 +4,12 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 
 @app.route("/")
 def render_main():
-    return render_template('Main.html')    
+    return render_template('page1.html')    
+    
+def Alabama_Data_Chart():
+    
+    
+    
 
 
     
@@ -12,10 +17,7 @@ def render_main():
 def render_response():
    
    
-  
-  
-    
-if __name__=="__main__":
-    app.run(debug=True)
+    if __name__=="__Main__":
+        app.run(debug=False)
 
  
