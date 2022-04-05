@@ -4,8 +4,9 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 
 @app.route("/")
 def render_main():
-    return render_template('page1.html')    
+    return render_template('Main.html')   
     
+@app.route("/Data")
 def Alabama_Finance_Data():
     
     with open('finance.json') as finance_data:
@@ -13,17 +14,17 @@ def Alabama_Finance_Data():
     states=[]
     for c in Alabama:
        
-        if c ["State"] == "ALABAMA" and c ["Year"] == 1992:
+        if c ["State"] == "ALABAMA" and c ["Year"] == 2019:
+            return render_template('page1.html',co= c ["Totals"] ["Capital outlay"]["Revenue"]["Expenditure"]["General expenditure"]["General revenue"]["Insurance trust  revenue"]["Intergovernmental"]["Tax"])
             
-    
+     
 
 
     
-@app.route("/Data")
-def render_response():
+
    
    
-        if __name__=="__Main__":
-            app.run(debug=False)
+if __name__=="__main__":
+    app.run(debug=False)
 
  
