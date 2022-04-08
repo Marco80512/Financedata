@@ -17,7 +17,8 @@ def Alabama_Finance_Data():
     for c in Alabama:
        
         if c ["State"] == "ALABAMA" and c ["Year"] == 2019:
-            return render_template('page1.html',co= c ["Totals"] ["Capital outlay"],r= c["Revenue"],e= c["Expenditure"],ge= c["General expenditure"],gr=c["General revenue"],itr=c["Insurance trust  revenue"],i= c["Intergovernmental"],t= c["Tax"])
+            return render_template('page1.html',co= c ["Totals"] ["Capital outlay"],r= c["Totals"]["Revenue"],e= c["Totals"]["Expenditure"]
+            ,ge= c["Totals"]["General expenditure"],gr=c["Totals"]["General revenue"],itr=c["Totals"]["Insurance trust  revenue"],i= c["Totals"]["Intergovernmental"],t= c["Totals"]["Tax"])
             
      
 
