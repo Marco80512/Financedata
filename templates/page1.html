@@ -11,8 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link rel="stylesheet" href="static/style.css">
-
-    <script src="style.css"></script>
     
     <script src="Finance.py"></script>
  	
@@ -20,7 +18,7 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="style.css">
+ 
   <title>Home - My Webpage</title>
   
   </head>
@@ -39,6 +37,9 @@
           <li class="nav-item, active">
             <a class="nav-link" href="/Data">Alabama Data</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/D">Definition</a>
+		  </li>
         </ul>
       </div>  
     </nav>
@@ -60,7 +61,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 
 	},
 	axisX: {
-		title: "Countries"
+		title: "Chart"
 	},
 	data: [{
 		type: "column",
@@ -73,7 +74,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 			{ label: "General revenue", y: {{gr}} },
 			{ label: "Insurance trust  revenue", y: {{itr}} },
 			{ label: "Intergovernmental", y: {{i}} },
-			{ label: "Tax", y: {{tax}} }
+			{ label: "Tax", y: {{t}} }
           
           
 			
