@@ -1,55 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{%extends "layout.html"%}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <link rel="stylesheet" href="static/style.css">
- 	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
  
-  <title>Home - My Webpage</title>
+{% block title %}Home - My Webpage{% endblock %}
   
-  </head>
-  <body id="background1">
-    <!--nav bar-->
-    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
-      <a class="navbar-brand" href="."></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/">About Finance data</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Data">Alabama Data</a>
-          </li>
-           <li class="nav-item, active">
-            <a class="nav-link" href="/D">Definition</a>
-		  </li>
-        </ul>
-      </div>  
-    </nav>
-    
-    <p>Definition: Capital outlay, means expenditures for the acquisition cost of capital assets, such as equipment, or expenditures
-       to make improvements to capital assets that materially increase their value or useful life.</p>
-    
+
+
+{% block content%}
      
+ 
+  
+  
+    
+<p class = "M">Definition: Capital outlay, means expenditures for the acquisition cost of capital assets, such as equipment, or expenditures
+   to make improvements to capital assets that materially increase their value or useful life.</p>
+   , 
+<p class = "M">Definition: Revenue is the money generated from normal business operations, calculated as the average sales price times the number of units
+   sold. It is the top line figure from which costs are subtracted to determine net income. Revenue is also known as sales on the income statement.</p>
+   
+ ,
+<p class = "M">Definition: Expenditures refer to the total purchase price of a good or service. For example, if a company buys a piece of equipment for $30 million and it has
+ a useful life of six years, this is a capital expenditure. Expenses refer to the amount that is recorded for the purpose of offsetting a company's revenue or income.</p>
      
      
      
      
     
-    </body>
-</html>
+{% endblock %}
